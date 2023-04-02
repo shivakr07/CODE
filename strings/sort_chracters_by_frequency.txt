@@ -1,0 +1,28 @@
+def sort_by_freq(msg):
+    msg_sort = sorted(msg)
+    msg_sort_frq = sorted(msg_sort, key= lambda c: msg_sort.count(c))
+    return "".join(msg_sort_frq)
+
+out = sort_by_freq("csestack")
+print(f"String sorted by char frequency: {out}")
+
+#method2 using dictionary  # optimized
+
+def sort_by_freq(msg):
+    frq = [0] * 26
+    freq = {} #{char: freq, }
+    for ch in msg:
+        if freq.get(ch):
+            freq[ch] += 1
+        else:
+            freq[ch] = 1
+    
+    out = ""
+    for k, v in freq.items():
+        out += (k*v) 
+    
+    return out
+        
+
+out = sort_by_freq("csestack")
+print(f"String sorted by char frequency: {out}")

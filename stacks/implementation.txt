@@ -1,0 +1,38 @@
+#method 1 implementation using list
+
+stack = []
+stack.append('a')
+stack.append('b')
+stack.append('c')
+
+print('Initial stack')
+print(stack)
+
+print('\nElements popped from stack:')
+print(stack.pop())
+print(stack.pop())
+print(stack.pop())
+
+print('\nStack after elements are popped:')
+print(stack)
+
+#------------------------------------------------
+#method 2  using collections.deque
+
+from collections import deque
+stack = deque()
+stack.append('a')
+stack.append('b')
+stack.append('c')
+
+print('Initial stack:')
+print(stack)
+
+print('\nElements popped from stack:')
+print(stack.pop())
+print(stack.pop())
+print(stack.pop())
+
+print('\nStack after elements are popped:')
+print(stack)
+

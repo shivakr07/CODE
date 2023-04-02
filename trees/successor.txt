@@ -1,0 +1,22 @@
+def succ(root, key):
+    temp = root
+    prev = None
+    if (temp.right is not None):
+        temp  = temp.right
+        while (temp.left is not None):
+            temp = temp.left
+        prev = temp
+    elif temp.left is not None:e
+        temp = temp.left
+        while (temp.right is not None):
+            temp = temp.right
+        prev = temp
+    else:
+        return None
+    return prev.key
+
+#main block
+
+successor = succ(root, key)
+
+# you pass the root and the key of the tree

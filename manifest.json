@@ -1,0 +1,21 @@
+﻿{
+  "name": "CODE",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "this is code snippets",
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_title": "CODE",
+    "default_popup": "popup.html"
+  },
+
+    "icons" : {
+      "48" : "leetcode48.png",
+      "64" : "leetcode64.png",
+      "128" : "leetcode128.png"
+  }
+  
+}

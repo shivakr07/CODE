@@ -1,0 +1,20 @@
+# preorder traversal
+def printPreorder(root):
+    if root:
+        print(root.val),
+        printPreorder(root.left)
+        printPreorder(root.right)
+
+#inorder traversal
+def printInorder(root):
+    if root:
+        printInorder(root.left)
+        print(root.val),
+        printInorder(root.right)
+
+#postorder
+def printPostorder(root):
+    if root:
+        printPostorder(root.left)
+        printPostorder(root.right)
+        print(root.val),

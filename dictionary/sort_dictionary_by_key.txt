@@ -1,0 +1,5 @@
+dictionary = {'john':'1','alice':'90','rook':'45','emma':'22','roz':'11'} 
+sorted_keys = sorted(dictionary.keys())
+
+sorted_dict = {key:dictionary[key] for key in sorted_keys}
+print(sorted_dict)

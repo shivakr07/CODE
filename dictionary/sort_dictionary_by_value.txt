@@ -1,0 +1,16 @@
+#method1 using lambda function
+
+dictionary = { 'A':1,'ABC':3,'ABCD':4,'AB':2 }
+print("before sorting Dictionary: ", dictionary)
+
+sort_dictionary= dict(sorted(dictionary.items(), key=lambda item: item[1])) 
+print("Sorted Dictionary by value: ", sort_dictionary)
+
+-----------------------  ------------- ----------- ------------
+# method2 using .items()
+
+from operator import itemgetter
+dictionary = { 'A':1,'ABC':3,'ABCD':4,'AB':2 }
+print("Dictionary: ", dictionary)
+sort_dict= dict(sorted(dictionary.items(), key=itemgetter(1))) 
+print("Sorted Dictionary by value: ", sort_dict)

@@ -1,0 +1,10 @@
+#Euclidian algo
+
+def computeGCD(x, y):
+	while(y):
+	x, y = y, x % y
+	return abs(x)
+
+a = 60
+b = 48
+print (computeGCD(60, 48))

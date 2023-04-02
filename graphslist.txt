@@ -1,0 +1,7 @@
+1 : BFS.txt
+2 : DFS.txt
+3 : m_coloring_problem.txt
+4 : minimum_spanning_tree.txt
+5 : N_Queens.txt
+6 : rat_in_maze.txt
+7 : shortestpath.txt

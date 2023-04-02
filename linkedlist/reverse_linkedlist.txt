@@ -1,0 +1,15 @@
+# Function to reverse the linked list
+def reverse(head):
+    prev = None
+    current = head
+    while(current is not None):
+        next = current.next
+        current.next = prev
+        prev = current
+        current = next
+    head = prev
+
+# you need to pass the head of the linked list
+
+reverse(head)
+
